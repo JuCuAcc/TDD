@@ -7,7 +7,6 @@ Given an integer, return a string where:<br/>
 **"Fizz"** if number is divisible by **3**.<br/>
 **"Buzz"** if number is divisible by **5**.<br/>
 number (as a string) if none of the above conditions are true.
-
 <br/>
 
 ---
