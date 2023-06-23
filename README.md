@@ -1,4 +1,4 @@
-# Solving FizzBuzz Problem Using Test Driven Development
+# Solving FizzBuzz Problem Using TDD
 
 # Problem
 
