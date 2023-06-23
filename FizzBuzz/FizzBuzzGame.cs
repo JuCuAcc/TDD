@@ -4,6 +4,7 @@
     {
         public static string Play(int number)
         {
+            // Using switch
             return number switch
             {
                 _ when number.IsDivisibleBy(15)
