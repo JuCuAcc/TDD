@@ -23,4 +23,14 @@ public class FizzBuzzTests
         string result = FizzBuzzGame.Play(number);
         result.Should().Be(number.ToString());
     }
+
+    [Theory]
+    [InlineData(5)]
+    [InlineData(10)]
+    [InlineData(20)]
+    public void GivenANumberNotDivisibleBy5_ThenReturnsBuzz(int number)
+    {
+        var result = FizzBuzzGame.Play(number);
+        result.Should().Be("Buzz");
+    }
 }
