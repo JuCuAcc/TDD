@@ -1,0 +1,52 @@
+Microsoft Windows [Version 10.0.19045.2965]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\Jashim\Job3\TDD>dotnet new sln
+The template "Solution File" was created successfully.
+
+
+D:\Jashim\Job3\TDD>dotnet new xunit -n FizzBuzz.Tests
+The template "xUnit Test Project" was created successfully.
+
+Processing post-creation actions...
+Restoring D:\Jashim\Job3\TDD\FizzBuzz.Tests\FizzBuzz.Tests.csproj:
+  Determining projects to restore...
+  Restored D:\Jashim\Job3\TDD\FizzBuzz.Tests\FizzBuzz.Tests.csproj (in 23 sec).
+Restore succeeded.
+
+
+
+D:\Jashim\Job3\TDD>dotnedotnet add package FluentAssertions
+'dotnedotnet' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\Jashim\Job3\TDD>dotnet add package FluentAssertions
+Could not find any project in `D:\Jashim\Job3\TDD\`.
+
+D:\Jashim\Job3\TDD>cd FizzBuzz.tests
+
+D:\Jashim\Job3\TDD\FizzBuzz.Tests>dotnet add package FluentAssertions
+  Determining projects to restore...
+  Writing C:\Users\ASUS\AppData\Local\Temp\tmppfivht.tmp
+info : X.509 certificate chain validation will use the default trust store selected by .NET for code signing.
+info : X.509 certificate chain validation will use the default trust store selected by .NET for timestamping.
+info : Adding PackageReference for package 'FluentAssertions' into project 'D:\Jashim\Job3\TDD\FizzBuzz.Tests\FizzBuzz.Tests.csproj'.
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/fluentassertions/index.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/fluentassertions/index.json 1689ms
+info : Restoring packages for D:\Jashim\Job3\TDD\FizzBuzz.Tests\FizzBuzz.Tests.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/fluentassertions/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/fluentassertions/index.json 1078ms
+info :   GET https://api.nuget.org/v3-flatcontainer/fluentassertions/6.11.0/fluentassertions.6.11.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/fluentassertions/6.11.0/fluentassertions.6.11.0.nupkg 66ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.configuration.configurationmanager/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/system.configuration.configurationmanager/index.json 896ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.configuration.configurationmanager/4.4.0/system.configuration.configurationmanager.4.4.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.configuration.configurationmanager/4.4.0/system.configuration.configurationmanager.4.4.0.nupkg 72ms
+info : Installed FluentAssertions 6.11.0 from https://api.nuget.org/v3/index.json with content hash aBaagwdNtVKkug1F3imGXUlmoBd8ZUZX8oQ5niThaJhF79SpESe1Gzq7OFuZkQdKD5Pa4Mone+jrbas873AT4g==.
+info : Installed System.Configuration.ConfigurationManager 4.4.0 from https://api.nuget.org/v3/index.json with content hash gWwQv/Ug1qWJmHCmN17nAbxJYmQBM/E94QxKLksvUiiKB1Ld3Sc/eK1lgmbSjDFxkQhVuayI/cGFZhpBSodLrg==.
+info : Package 'FluentAssertions' is compatible with all the specified frameworks in project 'D:\Jashim\Job3\TDD\FizzBuzz.Tests\FizzBuzz.Tests.csproj'.
+info : PackageReference for package 'FluentAssertions' version '6.11.0' added to file 'D:\Jashim\Job3\TDD\FizzBuzz.Tests\FizzBuzz.Tests.csproj'.
+info : Writing assets file to disk. Path: D:\Jashim\Job3\TDD\FizzBuzz.Tests\obj\project.assets.json
+log  : Restored D:\Jashim\Job3\TDD\FizzBuzz.Tests\FizzBuzz.Tests.csproj (in 7.11 sec).
+
+D:\Jashim\Job3\TDD\FizzBuzz.Tests>
