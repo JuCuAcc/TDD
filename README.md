@@ -70,11 +70,11 @@ First, we have the test code, which is located within the **FizzBuzz.Tests** nam
 
 1. The **GivenANumberNotDivisibleBy3or5_ThenReturnsNumberAsString** test verifies that if the number is not divisible by 3 or 5, the **Play()** method should return the number as a string. It uses the **InlineData** attribute to specify different input numbers for the test.
 
-2. The **GivenANumberNotDivisibleBy5_ThenReturnsBuzz** test checks that if the number is divisible by 5, the **Play()** method should return "Buzz".
+2. The **GivenANumberDivisibleBy5_ThenReturnsBuzz** test checks that if the number is divisible by 5, the **Play()** method should return "Buzz".
 
-3. The **GivenANumberNotDivisibleBy3_ThenReturnsFizz** test ensures that if the number is divisible by 3, the **Play()** method should return "Fizz".
+3. The **GivenANumberDivisibleBy3_ThenReturnsFizz** test ensures that if the number is divisible by 3, the **Play()** method should return "Fizz".
 
-4. The **GivenANumberNotDivisibleBy15_ThenReturnsFizzBuzz** test verifies that if the number is divisible by both 3 and 5 (i.e., 15), the **Play()** method should return "FizzBuzz".
+4. The **GivenANumberDivisibleBy15_ThenReturnsFizzBuzz** test verifies that if the number is divisible by both 3 and 5 (i.e., 15), the **Play()** method should return "FizzBuzz".
 ---
 
 Now let's move on to the solution code, which is located within the **FizzBuzz** namespace. The solution contains a static class named **FizzBuzzGame**, which provides the **Play()** method for solving the FizzBuzz problem.
