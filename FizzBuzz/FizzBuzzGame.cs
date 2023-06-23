@@ -4,9 +4,15 @@
     {
         public static string Play(int number)
         {
-            if (number % 3 == 0) return "Fizz";
-            if (number % 5 == 0) return "Buzz";
+            if (number.IsDivisibleBy(3) && number.IsDivisibleBy(5)) return "FizzBuzz";
+            if (number.IsDivisibleBy(3)) return "Fizz";
+            if (number.IsDivisibleBy(5)) return "Buzz";
+
             return number.ToString();
         }
+
+        public static bool IsDivisibleBy(
+            this int i, int divisibleBy)
+            => i % divisibleBy == 0;
     }
 }

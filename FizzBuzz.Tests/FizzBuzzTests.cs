@@ -43,4 +43,14 @@ public class FizzBuzzTests
         var result = FizzBuzzGame.Play(number);
         result.Should().Be("Fizz");
     }
+
+    [Theory]
+    [InlineData(15)]
+    [InlineData(30)]
+    [InlineData(60)]
+    public void GivenANumberNotDivisibleBy15_ThenReturnsFizzBuzz(int number)
+    {
+        var result = FizzBuzzGame.Play(number);
+        result.Should().Be("FizzBuzz");
+    }
 }
