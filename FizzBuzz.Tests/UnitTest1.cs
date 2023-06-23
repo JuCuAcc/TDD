@@ -1,3 +1,5 @@
+using FluentAssertions;
+
 namespace FizzBuzz.Tests;
 
 // Given an integer, return a string where:
@@ -8,11 +10,20 @@ namespace FizzBuzz.Tests;
 // number (as a string) if none of the above conditions are true.
 
 
-public class UnitTest1
+public class FizzBuzzTests
 {
     [Fact]
-    public void Test1()
+    public void GivenANumberNotDivisibleBy3or5_ThenReturnsNumberAsString()
     {
+        string result = FizzBuzzGame.Play(i: 1);
+        result.Should().Be("1");
+    }
+}
 
+public static class FizzBuzzGame
+{
+    public static string Play(int i)
+    {
+        return "1";
     }
 }
