@@ -12,11 +12,16 @@ namespace FizzBuzz.Tests;
 
 public class FizzBuzzTests
 {
-    [Fact]
-    public void GivenANumberNotDivisibleBy3or5_ThenReturnsNumberAsString()
+
+    [Theory]
+    [InlineData(1)]
+    [InlineData(2)]
+    [InlineData(4)]
+    [InlineData(7)]
+    public void GivenANumberNotDivisibleBy3or5_ThenReturnsNumberAsString(int number)
     {
-        string result = FizzBuzzGame.Play(i: 1);
-        result.Should().Be("1");
+        string result = FizzBuzzGame.Play(number);
+        result.Should().Be(number.ToString());
     }
 }
 
@@ -24,6 +29,6 @@ public static class FizzBuzzGame
 {
     public static string Play(int i)
     {
-        return "1";
+        return i.ToString();
     }
 }
