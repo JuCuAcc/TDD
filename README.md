@@ -38,7 +38,7 @@ public class FizzBuzzTests
     [InlineData(5)]
     [InlineData(10)]
     [InlineData(20)]
-    public void GivenANumberNotDivisibleBy5_ThenReturnsBuzz(int number)
+    public void GivenANumberDivisibleBy5_ThenReturnsBuzz(int number)
     {
         var result = FizzBuzzGame.Play(number);
         result.Should().Be("Buzz");
@@ -48,7 +48,7 @@ public class FizzBuzzTests
     [InlineData(3)]
     [InlineData(6)]
     [InlineData(9)]
-    public void GivenANumberNotDivisibleBy3_ThenReturnsFizz(int number)
+    public void GivenANumberDivisibleBy3_ThenReturnsFizz(int number)
     {
         var result = FizzBuzzGame.Play(number);
         result.Should().Be("Fizz");
@@ -58,7 +58,7 @@ public class FizzBuzzTests
     [InlineData(15)]
     [InlineData(30)]
     [InlineData(60)]
-    public void GivenANumberNotDivisibleBy15_ThenReturnsFizzBuzz(int number)
+    public void GivenANumberDivisibleBy15_ThenReturnsFizzBuzz(int number)
     {
         var result = FizzBuzzGame.Play(number);
         result.Should().Be("FizzBuzz");
